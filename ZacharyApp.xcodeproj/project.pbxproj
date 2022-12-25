@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		B6E151A229587FDF00AFA69D /* ZacharyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151A129587FDF00AFA69D /* ZacharyAppApp.swift */; };
-		B6E151A429587FDF00AFA69D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151A329587FDF00AFA69D /* ContentView.swift */; };
 		B6E151A629587FE000AFA69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E151A529587FE000AFA69D /* Assets.xcassets */; };
 		B6E151A929587FE000AFA69D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E151A829587FE000AFA69D /* Preview Assets.xcassets */; };
+		B6E151B12958854300AFA69D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151B02958854300AFA69D /* Color.swift */; };
+		B6E151B7295886FD00AFA69D /* CryptoHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151B6295886FD00AFA69D /* CryptoHomeView.swift */; };
+		B6E151BB29588A7500AFA69D /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151BA29588A7500AFA69D /* CircleButtonView.swift */; };
+		B6E151BD29588DA600AFA69D /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151BC29588DA600AFA69D /* CircleButtonAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B6E1519E29587FDF00AFA69D /* ZacharyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZacharyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E151A129587FDF00AFA69D /* ZacharyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZacharyAppApp.swift; sourceTree = "<group>"; };
-		B6E151A329587FDF00AFA69D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B6E151A529587FE000AFA69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E151A829587FE000AFA69D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6E151B02958854300AFA69D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B6E151B6295886FD00AFA69D /* CryptoHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHomeView.swift; sourceTree = "<group>"; };
+		B6E151BA29588A7500AFA69D /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		B6E151BC29588DA600AFA69D /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				B6E151A129587FDF00AFA69D /* ZacharyAppApp.swift */,
-				B6E151A329587FDF00AFA69D /* ContentView.swift */,
+				B6E151AF2958853600AFA69D /* Extensions */,
+				B6E151B22958867500AFA69D /* Core */,
 				B6E151A529587FE000AFA69D /* Assets.xcassets */,
 				B6E151A729587FE000AFA69D /* Preview Content */,
 			);
@@ -65,6 +72,64 @@
 				B6E151A829587FE000AFA69D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6E151AF2958853600AFA69D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6E151B02958854300AFA69D /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B6E151B22958867500AFA69D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B6E151B829588A4200AFA69D /* Components */,
+				B6E151B32958869C00AFA69D /* Crypto */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B6E151B32958869C00AFA69D /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				B6E151B5295886CF00AFA69D /* Views */,
+				B6E151B4295886C600AFA69D /* ViewModels */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		B6E151B4295886C600AFA69D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B6E151B5295886CF00AFA69D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6E151B6295886FD00AFA69D /* CryptoHomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6E151B829588A4200AFA69D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B6E151B929588A6000AFA69D /* CircleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B6E151B929588A6000AFA69D /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				B6E151BA29588A7500AFA69D /* CircleButtonView.swift */,
+				B6E151BC29588DA600AFA69D /* CircleButtonAnimationView.swift */,
+			);
+			path = CircleButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +202,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6E151A429587FDF00AFA69D /* ContentView.swift in Sources */,
+				B6E151B7295886FD00AFA69D /* CryptoHomeView.swift in Sources */,
 				B6E151A229587FDF00AFA69D /* ZacharyAppApp.swift in Sources */,
+				B6E151BD29588DA600AFA69D /* CircleButtonAnimationView.swift in Sources */,
+				B6E151BB29588A7500AFA69D /* CircleButtonView.swift in Sources */,
+				B6E151B12958854300AFA69D /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +338,13 @@
 				DEVELOPMENT_TEAM = 3D5H55Z4KP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Zac's App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +369,13 @@
 				DEVELOPMENT_TEAM = 3D5H55Z4KP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Zac's App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
