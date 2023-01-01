@@ -9,12 +9,16 @@ import SwiftUI
 
 @main
 struct ZacharyAppApp: App {
+    
+    @StateObject private var vm = CryptoHomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
             TabView {
                 NavigationStack {
                     CryptoHomeView()
                 }
+                .environmentObject(vm)
                 .tabItem {
                     Label("Crypto 🚀", systemImage: "bitcoinsign.circle")
                 }
@@ -34,12 +38,13 @@ struct ZacharyAppApp: App {
                 }
                 
                 NavigationStack {
-                    CryptoHomeView()
+                    BusHomeView()
                 }
                 .tabItem {
                     Label("Bus to Busan 🚌", systemImage: "bus")
                 }
             }
+            .tint(Color.theme.accent)
             .onAppear {
                             // correct the transparency bug for Tab bars
                             let tabBarAppearance = UITabBarAppearance()
