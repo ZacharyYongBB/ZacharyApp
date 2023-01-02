@@ -17,10 +17,10 @@ class CryptoHomeViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
     
     init() {
-        addSubscribers()
+        addCoinSubscribers()
     }
     
-    func addSubscribers() {
+    func addCoinSubscribers() {
         
         coinDataService.$allCoin
             .sink { [weak self] returnedCoins in

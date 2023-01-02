@@ -28,6 +28,10 @@
 		B6E151E42961533F00AFA69D /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151E32961533F00AFA69D /* CoinImageView.swift */; };
 		B6E151E62961548C00AFA69D /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151E52961548C00AFA69D /* CoinImageService.swift */; };
 		B6E151E82961566800AFA69D /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151E72961566800AFA69D /* CoinImageViewModel.swift */; };
+		B6E151EA29632DE000AFA69D /* NASADataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151E929632DE000AFA69D /* NASADataService.swift */; };
+		B6E151EF29632EE700AFA69D /* NASAHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151EE29632EE700AFA69D /* NASAHomeView.swift */; };
+		B6E151F129632F0500AFA69D /* NASAHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151F029632F0500AFA69D /* NASAHomeViewModel.swift */; };
+		B6E151F329632FB100AFA69D /* NASAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151F229632FB100AFA69D /* NASAModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +57,10 @@
 		B6E151E32961533F00AFA69D /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		B6E151E52961548C00AFA69D /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		B6E151E72961566800AFA69D /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
+		B6E151E929632DE000AFA69D /* NASADataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASADataService.swift; sourceTree = "<group>"; };
+		B6E151EE29632EE700AFA69D /* NASAHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAHomeView.swift; sourceTree = "<group>"; };
+		B6E151F029632F0500AFA69D /* NASAHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAHomeViewModel.swift; sourceTree = "<group>"; };
+		B6E151F229632FB100AFA69D /* NASAModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,7 @@
 				B6E151D82960A08E00AFA69D /* Services */,
 				B6E151C72960297800AFA69D /* Models */,
 				B6E151B22958867500AFA69D /* Core */,
+				B6E151EB29632EB000AFA69D /* NASA */,
 				B6E151A529587FE000AFA69D /* Assets.xcassets */,
 				B6E151A729587FE000AFA69D /* Preview Content */,
 			);
@@ -148,8 +157,8 @@
 		B6E151B5295886CF00AFA69D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B6E151E32961533F00AFA69D /* CoinImageView.swift */,
 				B6E151B6295886FD00AFA69D /* CryptoHomeView.swift */,
+				B6E151E32961533F00AFA69D /* CoinImageView.swift */,
 				B6E151CC2960306300AFA69D /* CoinRowView.swift */,
 			);
 			path = Views;
@@ -249,6 +258,7 @@
 			children = (
 				B6E151C8296029A500AFA69D /* CoinModel.swift */,
 				B6E151CA296029BD00AFA69D /* BusTimingModel.swift */,
+				B6E151F229632FB100AFA69D /* NASAModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -259,6 +269,7 @@
 				B6E151D92960A0DB00AFA69D /* CoinDataService.swift */,
 				B6E151E52961548C00AFA69D /* CoinImageService.swift */,
 				B6E151DB2960A10400AFA69D /* BusDataService.swift */,
+				B6E151E929632DE000AFA69D /* NASADataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -276,6 +287,31 @@
 			children = (
 			);
 			path = CoinImage;
+			sourceTree = "<group>";
+		};
+		B6E151EB29632EB000AFA69D /* NASA */ = {
+			isa = PBXGroup;
+			children = (
+				B6E151EC29632EC000AFA69D /* Views */,
+				B6E151ED29632EC500AFA69D /* ViewModels */,
+			);
+			path = NASA;
+			sourceTree = "<group>";
+		};
+		B6E151EC29632EC000AFA69D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6E151EE29632EE700AFA69D /* NASAHomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6E151ED29632EC500AFA69D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B6E151F029632F0500AFA69D /* NASAHomeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,13 +391,17 @@
 				B6E151BD29588DA600AFA69D /* CircleButtonAnimationView.swift in Sources */,
 				B6E151DF29614D6D00AFA69D /* NetworkingManager.swift in Sources */,
 				B6E151D12960308C00AFA69D /* BusRowView.swift in Sources */,
+				B6E151EF29632EE700AFA69D /* NASAHomeView.swift in Sources */,
 				B6E151BB29588A7500AFA69D /* CircleButtonView.swift in Sources */,
 				B6E151DC2960A10400AFA69D /* BusDataService.swift in Sources */,
 				B6E151D729609CB600AFA69D /* CryptoHomeViewModel.swift in Sources */,
 				B6E151D3296031D000AFA69D /* PreviewProvider.swift in Sources */,
 				B6E151CB296029BD00AFA69D /* BusTimingModel.swift in Sources */,
 				B6E151E42961533F00AFA69D /* CoinImageView.swift in Sources */,
+				B6E151F129632F0500AFA69D /* NASAHomeViewModel.swift in Sources */,
 				B6E151CF2960307900AFA69D /* BusHomeView.swift in Sources */,
+				B6E151F329632FB100AFA69D /* NASAModel.swift in Sources */,
+				B6E151EA29632DE000AFA69D /* NASADataService.swift in Sources */,
 				B6E151C9296029A500AFA69D /* CoinModel.swift in Sources */,
 				B6E151D52960976A00AFA69D /* Double.swift in Sources */,
 				B6E151E82961566800AFA69D /* CoinImageViewModel.swift in Sources */,
