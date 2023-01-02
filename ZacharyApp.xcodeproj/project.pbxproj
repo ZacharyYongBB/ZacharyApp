@@ -99,7 +99,6 @@
 				B6E151D82960A08E00AFA69D /* Services */,
 				B6E151C72960297800AFA69D /* Models */,
 				B6E151B22958867500AFA69D /* Core */,
-				B6E151EB29632EB000AFA69D /* NASA */,
 				B6E151A529587FE000AFA69D /* Assets.xcassets */,
 				B6E151A729587FE000AFA69D /* Preview Content */,
 			);
@@ -132,6 +131,7 @@
 				B6E151C0296028D900AFA69D /* Notes */,
 				B6E151BF296028CF00AFA69D /* Photos */,
 				B6E151BE296028B100AFA69D /* Bus */,
+				B6E151EB29632EB000AFA69D /* NASA */,
 			);
 			path = Core;
 			sourceTree = "<group>";
