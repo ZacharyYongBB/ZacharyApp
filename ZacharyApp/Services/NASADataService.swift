@@ -8,24 +8,24 @@
 import Foundation
 import Combine
 
-class NASADataService {
+class NasaDataService {
     
-    @Published var nasaData: [NASAModel] = []
+    @Published var nasaApod: [ApodModel] = []
 
     var nasaDataSubscription: AnyCancellable?
     
     init() {
-        getNASAData()
+        getNasaData()
     }
     
-    private func getNASAData() {
+    private func getNasaData() {
         guard let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=t14iHVtd0lwAUoIuoUs0vQBe9kcAyJhmduYGWuFY")
         else {return}
         
         nasaDataSubscription = NetworkingManager.download(url: url)
-            .decode(type: [NASAModel].self, decoder: JSONDecoder())
+            .decode(type: [ApodModel].self, decoder: JSONDecoder())
             .sink(receiveCompletion: NetworkingManager.handleCompletion, receiveValue: { [weak self] returnedNASAData in
-                self?.nasaData = returnedNASAData
+                self?.nasaApod = returnedNASAData
             })
     }
     

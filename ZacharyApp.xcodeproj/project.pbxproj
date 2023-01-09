@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B637EECB296C58A700D78A77 /* NasaApodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637EECA296C58A700D78A77 /* NasaApodView.swift */; };
 		B6E151A229587FDF00AFA69D /* ZacharyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151A129587FDF00AFA69D /* ZacharyAppApp.swift */; };
 		B6E151A629587FE000AFA69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E151A529587FE000AFA69D /* Assets.xcassets */; };
 		B6E151A929587FE000AFA69D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E151A829587FE000AFA69D /* Preview Assets.xcassets */; };
@@ -28,13 +29,14 @@
 		B6E151E42961533F00AFA69D /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151E32961533F00AFA69D /* CoinImageView.swift */; };
 		B6E151E62961548C00AFA69D /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151E52961548C00AFA69D /* CoinImageService.swift */; };
 		B6E151E82961566800AFA69D /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151E72961566800AFA69D /* CoinImageViewModel.swift */; };
-		B6E151EA29632DE000AFA69D /* NASADataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151E929632DE000AFA69D /* NASADataService.swift */; };
-		B6E151EF29632EE700AFA69D /* NASAHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151EE29632EE700AFA69D /* NASAHomeView.swift */; };
-		B6E151F129632F0500AFA69D /* NASAHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151F029632F0500AFA69D /* NASAHomeViewModel.swift */; };
-		B6E151F329632FB100AFA69D /* NASAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151F229632FB100AFA69D /* NASAModel.swift */; };
+		B6E151EA29632DE000AFA69D /* NasaDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151E929632DE000AFA69D /* NasaDataService.swift */; };
+		B6E151EF29632EE700AFA69D /* NasaHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151EE29632EE700AFA69D /* NasaHomeView.swift */; };
+		B6E151F129632F0500AFA69D /* NasaHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151F029632F0500AFA69D /* NasaHomeViewModel.swift */; };
+		B6E151F329632FB100AFA69D /* ApodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E151F229632FB100AFA69D /* ApodModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B637EECA296C58A700D78A77 /* NasaApodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaApodView.swift; sourceTree = "<group>"; };
 		B6E1519E29587FDF00AFA69D /* ZacharyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZacharyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E151A129587FDF00AFA69D /* ZacharyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZacharyAppApp.swift; sourceTree = "<group>"; };
 		B6E151A529587FE000AFA69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,10 +59,10 @@
 		B6E151E32961533F00AFA69D /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		B6E151E52961548C00AFA69D /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		B6E151E72961566800AFA69D /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
-		B6E151E929632DE000AFA69D /* NASADataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASADataService.swift; sourceTree = "<group>"; };
-		B6E151EE29632EE700AFA69D /* NASAHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAHomeView.swift; sourceTree = "<group>"; };
-		B6E151F029632F0500AFA69D /* NASAHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAHomeViewModel.swift; sourceTree = "<group>"; };
-		B6E151F229632FB100AFA69D /* NASAModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAModel.swift; sourceTree = "<group>"; };
+		B6E151E929632DE000AFA69D /* NasaDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaDataService.swift; sourceTree = "<group>"; };
+		B6E151EE29632EE700AFA69D /* NasaHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaHomeView.swift; sourceTree = "<group>"; };
+		B6E151F029632F0500AFA69D /* NasaHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaHomeViewModel.swift; sourceTree = "<group>"; };
+		B6E151F229632FB100AFA69D /* ApodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,7 +260,7 @@
 			children = (
 				B6E151C8296029A500AFA69D /* CoinModel.swift */,
 				B6E151CA296029BD00AFA69D /* BusTimingModel.swift */,
-				B6E151F229632FB100AFA69D /* NASAModel.swift */,
+				B6E151F229632FB100AFA69D /* ApodModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -267,9 +269,9 @@
 			isa = PBXGroup;
 			children = (
 				B6E151D92960A0DB00AFA69D /* CoinDataService.swift */,
+				B6E151E929632DE000AFA69D /* NasaDataService.swift */,
 				B6E151E52961548C00AFA69D /* CoinImageService.swift */,
 				B6E151DB2960A10400AFA69D /* BusDataService.swift */,
-				B6E151E929632DE000AFA69D /* NASADataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -301,7 +303,8 @@
 		B6E151EC29632EC000AFA69D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B6E151EE29632EE700AFA69D /* NASAHomeView.swift */,
+				B6E151EE29632EE700AFA69D /* NasaHomeView.swift */,
+				B637EECA296C58A700D78A77 /* NasaApodView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,7 +312,7 @@
 		B6E151ED29632EC500AFA69D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B6E151F029632F0500AFA69D /* NASAHomeViewModel.swift */,
+				B6E151F029632F0500AFA69D /* NasaHomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -391,22 +394,23 @@
 				B6E151BD29588DA600AFA69D /* CircleButtonAnimationView.swift in Sources */,
 				B6E151DF29614D6D00AFA69D /* NetworkingManager.swift in Sources */,
 				B6E151D12960308C00AFA69D /* BusRowView.swift in Sources */,
-				B6E151EF29632EE700AFA69D /* NASAHomeView.swift in Sources */,
+				B6E151EF29632EE700AFA69D /* NasaHomeView.swift in Sources */,
 				B6E151BB29588A7500AFA69D /* CircleButtonView.swift in Sources */,
 				B6E151DC2960A10400AFA69D /* BusDataService.swift in Sources */,
 				B6E151D729609CB600AFA69D /* CryptoHomeViewModel.swift in Sources */,
 				B6E151D3296031D000AFA69D /* PreviewProvider.swift in Sources */,
 				B6E151CB296029BD00AFA69D /* BusTimingModel.swift in Sources */,
 				B6E151E42961533F00AFA69D /* CoinImageView.swift in Sources */,
-				B6E151F129632F0500AFA69D /* NASAHomeViewModel.swift in Sources */,
+				B6E151F129632F0500AFA69D /* NasaHomeViewModel.swift in Sources */,
 				B6E151CF2960307900AFA69D /* BusHomeView.swift in Sources */,
-				B6E151F329632FB100AFA69D /* NASAModel.swift in Sources */,
-				B6E151EA29632DE000AFA69D /* NASADataService.swift in Sources */,
+				B6E151F329632FB100AFA69D /* ApodModel.swift in Sources */,
+				B6E151EA29632DE000AFA69D /* NasaDataService.swift in Sources */,
 				B6E151C9296029A500AFA69D /* CoinModel.swift in Sources */,
 				B6E151D52960976A00AFA69D /* Double.swift in Sources */,
 				B6E151E82961566800AFA69D /* CoinImageViewModel.swift in Sources */,
 				B6E151E62961548C00AFA69D /* CoinImageService.swift in Sources */,
 				B6E151B12958854300AFA69D /* Color.swift in Sources */,
+				B637EECB296C58A700D78A77 /* NasaApodView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

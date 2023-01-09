@@ -8,7 +8,7 @@
 import Foundation
 
 
-// NASA API info
+// NASA APOD API info
 /*
  
  URL:https://api.nasa.gov/planetary/apod?api_key=t14iHVtd0lwAUoIuoUs0vQBe9kcAyJhmduYGWuFY
@@ -28,7 +28,7 @@ import Foundation
  */
 
 
-struct NASAModel: Codable {
+struct ApodModel: Codable {
     let copyright, date, explanation: String?
     let hdurl: String?
     let mediaType, serviceVersion, title: String?

@@ -8,11 +8,13 @@
 import Foundation
 import Combine
 
-class NASAHomeViewModel: ObservableObject {
-    
-    @Published var nasaData: [NASAModel] = []
 
-    private let nasaDataService = NASADataService()
+
+class NasaHomeViewModel: ObservableObject {
+    
+    @Published var nasaApod: [ApodModel] = []
+
+    private let nasaDataService = NasaDataService()
     private var cancellables = Set<AnyCancellable>()
     
     init() {
@@ -23,7 +25,7 @@ class NASAHomeViewModel: ObservableObject {
         
         nasaDataService.$nasaData
             .sink { [weak self] returnedNASAData in
-                self?.nasaData = returnedNASAData
+                self?.nasaApod = returnedNASAData
             }
             .store(in: &cancellables)
         
